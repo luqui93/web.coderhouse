@@ -3,9 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0"/>
+
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<title>Ameri</title>
@@ -35,7 +33,7 @@
 
 			<div class="container-navbar">
 				<nav class="navbar container">
-					<i class="fa-solid fa-bars"></i>
+					<i class="fas fa-bars burger-icon"></i>
 					<ul class="menu">
 						<li><a href="#">Inicio</a></li>
 						<li><a href="new.html">Camisas</a></li>
@@ -533,14 +531,14 @@
 
 		<script>
 			document.addEventListener("DOMContentLoaded", function () {
-			  const burgerIcon = document.querySelector(".fa-bars");
-			  const menu = document.querySelector(".menu");
-		  
-			  burgerIcon.addEventListener("click", function () {
-				menu.classList.toggle("active");
-			  });
+				const burgerIcon = document.querySelector(".burger-icon");
+				const menu = document.querySelector(".menu");
+		
+				burgerIcon.addEventListener("click", function () {
+					menu.classList.toggle("active");
+				});
 			});
-		  </script>
+		</script>
 
 
 		<!-- JavaScript Bundle with Popper -->
@@ -548,9 +546,6 @@
 integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 	</body>
 
-		<script
-			src="https://kit.fontawesome.com/81581fb069.js"
-			crossorigin="anonymous"
-		></script>
+	
 	</body>
 </html>

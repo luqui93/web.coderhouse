@@ -1121,10 +1121,21 @@ html {
 	}
 }
 
-.menu {
-	display: none;
-  }
-  
-  .menu.active {
-	display: block;
-  }
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+    .menu.active {
+        display: block;
+    }
+}
+
+@media (min-width: 769px) {
+    .menu {
+        display: flex;
+    }
+    .menu.active {
+        display: flex;
+    }
+}
