@@ -230,7 +230,17 @@
 			src="https://kit.fontawesome.com/81581fb069.js"
 			crossorigin="anonymous"
 		></script>
-
+		
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+			  const burgerIcon = document.querySelector(".fa-bars");
+			  const menu = document.querySelector(".menu");
+		  
+			  burgerIcon.addEventListener("click", function () {
+				menu.classList.toggle("active");
+			  });
+			});
+		  </script>
 
 		<!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 

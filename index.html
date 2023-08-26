@@ -5,8 +5,9 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta
 			name="viewport"
-			content="width=device-width, initial-scale=1.0"
-		/>
+			content="width=device-width, initial-scale=1.0"/>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 		<title>Ameri</title>
 		<link rel="stylesheet" href="styles.css" />
 	</head>
@@ -529,6 +530,17 @@
 			src="https://kit.fontawesome.com/81581fb069.js"
 			crossorigin="anonymous"
 		></script>
+
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+			  const burgerIcon = document.querySelector(".fa-bars");
+			  const menu = document.querySelector(".menu");
+		  
+			  burgerIcon.addEventListener("click", function () {
+				menu.classList.toggle("active");
+			  });
+			});
+		  </script>
 
 
 		<!-- JavaScript Bundle with Popper -->

@@ -1010,6 +1010,14 @@ html {
 	}
 }
 
+.menu {
+	display: none;
+  }
+  
+  .menu.active {
+	display: block;
+  }
+
 /* ********************************** */
 /*       MEDIA QUERIES -- 468px       */
 /* ********************************** */
@@ -1112,3 +1120,11 @@ html {
 		font-size: 1.6rem;
 	}
 }
+
+.menu {
+	display: none;
+  }
+  
+  .menu.active {
+	display: block;
+  }
