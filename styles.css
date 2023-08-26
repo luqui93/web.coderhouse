@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+
 :root {
-	--primary-color: #c7a17a;
-	--background-color: #f9f5f0;
+	--primary-color: #e2e2e2;
+	--background-color: #e2e2e2;
 	--dark-color: #151515;
 }
 
@@ -15,8 +17,9 @@ html {
 	box-sizing: border-box;
 }
 
-
-
+/* ********************************** */
+/*             UTILIDADES             */
+/* ********************************** */
 .container {
 	max-width: 120rem;
 	margin: 0 auto;
@@ -101,7 +104,7 @@ html {
 
 /* ************* NAVBAR ************* */
 .container-navbar {
-	background-color: var(--black-color);
+	background-color: var(--primary-color);
 }
 
 .navbar {
@@ -196,11 +199,11 @@ html {
 }
 
 /* ********************************** */
-/*               BANNER INDEX         */
+/*               BANNER               */
 /* ********************************** */
 .banner {
 	background-image: linear-gradient(100deg, #000000, #00000020),
-		url('img/Captura1.jpg');
+		url('img/Captura1.JPG');
 	height: 60rem;
 	background-size: cover;
 	background-position: center;
@@ -235,7 +238,16 @@ html {
 	background-size: cover;
 	background-position: center;
 }
-
+/* ********************************** */
+/*               BANNER CONTACTO      */
+/* ********************************** */
+.banner-contacto {
+	background-image: linear-gradient(100deg, #000000, #00000020),
+		url('img/contacto.JPG');
+	height: 60rem;
+	background-size: cover;
+	background-position: center;
+}
 
 .content-banner {
 	max-width: 90rem;
@@ -319,7 +331,7 @@ html {
 }
 
 /* ********************************** */
-/*             OTRAS CATEGORIAS       */
+/*             CATEGORIES             */
 /* ********************************** */
 
 .top-categories {
@@ -345,25 +357,25 @@ html {
 	gap: 2rem;
 }
 
-.category-moca {
+.category-campera {
 	background-image: linear-gradient(#00000080, #00000080),
-		url('img/Campera.jpg');
+		url('img/campera.jpg');
 	background-size: cover;
 	background-position: bottom;
 	background-repeat: no-repeat;
 }
 
-.category-capuchino {
+.category-remerones {
 	background-image: linear-gradient(#00000080, #00000080),
-		url('img/Billetera.jpg');
+		url('img/remerones.jpg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 }
 
-.category-expreso {
+.category-pantalones {
 	background-image: linear-gradient(#00000080, #00000080),
-		url('img/Media.jpg');
+		url('img/pantalon.jpg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -398,7 +410,7 @@ html {
 }
 
 /* ********************************** */
-/*            OUTLET                  */
+/*            TOP PRODUCTS            */
 /* ********************************** */
 .top-products {
 	display: flex;
@@ -815,8 +827,8 @@ html {
 	background-color: #3b5998;
 }
 
-.twitter {
-	background-color: #00acee;
+.tiktok {
+	background-color: #000000;
 }
 
 .youtube {
