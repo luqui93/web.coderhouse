@@ -1,0 +1,1824 @@
+/*base*/
+@import url("https://fonts.googleapis.com/css2?family=Cabin&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cabin&display=swap");
+/* line 1, sass/base/_resets.scss */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* ********************************** */
+/*             UTILIDADES             */
+/* ********************************** */
+/* line 4, sass/base/_base.scss */
+.container {
+  max-width: 120rem;
+  margin: 0 auto; }
+
+/* line 9, sass/base/_base.scss */
+.heading-1 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 3rem; }
+
+/* ********************************** */
+/*               HEADER               */
+/* ********************************** */
+/* line 18, sass/base/_base.scss */
+.container-hero {
+  background-color: #e2e2e2; }
+
+/* line 22, sass/base/_base.scss */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0; }
+
+/* line 29, sass/base/_base.scss */
+.customer-support {
+  display: flex;
+  align-items: center;
+  gap: 2rem; }
+
+/* line 35, sass/base/_base.scss */
+.customer-support i {
+  font-size: 3.3rem; }
+
+/* line 39, sass/base/_base.scss */
+.content-customer-support {
+  display: flex;
+  flex-direction: column; }
+
+/* line 44, sass/base/_base.scss */
+.container-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; }
+
+/* line 50, sass/base/_base.scss */
+.container-logo i {
+  font-size: 3rem; }
+
+/* line 54, sass/base/_base.scss */
+.container-logo h1 a {
+  text-decoration: none;
+  color: #000;
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: -1px; }
+
+/* line 62, sass/base/_base.scss */
+.container-user {
+  display: flex;
+  gap: 1rem;
+  cursor: pointer; }
+
+/* line 68, sass/base/_base.scss */
+.container-user .fa-user {
+  font-size: 3rem;
+  color: var(--primary-color);
+  padding-right: 2.5rem;
+  border-right: 1px solid #e2e2e2; }
+
+/* line 75, sass/base/_base.scss */
+.container-user .fa-basket-shopping {
+  font-size: 3rem;
+  color: #e2e2e2;
+  padding-left: 1rem; }
+
+/* line 81, sass/base/_base.scss */
+.content-shopping-cart {
+  display: flex;
+  flex-direction: column; }
+
+/* ************* NAVBAR ************* */
+/* line 87, sass/base/_base.scss */
+.container-navbar {
+  background-color: #e2e2e2; }
+
+/* line 91, sass/base/_base.scss */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0; }
+
+/* line 98, sass/base/_base.scss */
+.navbar .fa-bars {
+  display: none; }
+
+/* line 102, sass/base/_base.scss */
+.menu {
+  display: flex;
+  gap: 2rem; }
+
+/* line 107, sass/base/_base.scss */
+.menu li {
+  list-style: none; }
+
+/* line 111, sass/base/_base.scss */
+.menu a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: var(--dark-color);
+  font-weight: 600;
+  text-transform: uppercase;
+  position: relative; }
+
+/* line 120, sass/base/_base.scss */
+.menu a::after {
+  content: '';
+  width: 1.5rem;
+  height: 1px;
+  background-color: #fff;
+  position: absolute;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  opacity: 0;
+  transition: all 0.3s ease; }
+
+/* line 133, sass/base/_base.scss */
+.menu a:hover::after {
+  opacity: 1; }
+
+/* line 137, sass/base/_base.scss */
+.menu a:hover {
+  color: #fff; }
+
+/* line 141, sass/base/_base.scss */
+.search-form {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 2px solid #fff;
+  border-radius: 2rem;
+  background-color: #fff;
+  height: 4.4rem;
+  overflow: hidden; }
+
+/* line 152, sass/base/_base.scss */
+.search-form input {
+  outline: none;
+  font-family: inherit;
+  border: none;
+  width: 25rem;
+  font-size: 1.4rem;
+  padding: 0 2rem;
+  color: #777;
+  cursor: pointer; }
+
+/* line 163, sass/base/_base.scss */
+.search-form input::-webkit-search-cancel-button {
+  appearance: none; }
+
+/* line 167, sass/base/_base.scss */
+.search-form .btn-search {
+  border: none;
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 1rem; }
+
+/* line 177, sass/base/_base.scss */
+.btn-search i {
+  font-size: 2rem;
+  color: #fff; }
+
+/* ********************************** */
+/*               BANNER               */
+/* ********************************** */
+/* line 185, sass/base/_base.scss */
+.banner {
+  background-image: linear-gradient(100deg, #000000, #00000020), url("../img/Captura1.JPG");
+  height: 60rem;
+  background-size: cover;
+  background-position: center; }
+
+/* ********************************** */
+/*               BANNER NEW           */
+/* ********************************** */
+/* line 195, sass/base/_base.scss */
+.banner-new {
+  background-image: linear-gradient(100deg, #000000, #00000020), url("../img/manki.jpg");
+  height: 60rem;
+  background-size: cover;
+  background-position: center; }
+
+/* ********************************** */
+/*               BANNER SHOP          */
+/* ********************************** */
+/* line 205, sass/base/_base.scss */
+.banner-shop {
+  background-image: linear-gradient(100deg, #000000, #00000020), url("../img/Captura2.JPG");
+  height: 60rem;
+  background-size: cover;
+  background-position: center; }
+
+/* ********************************** */
+/*               BANNER STORE         */
+/* ********************************** */
+/* line 215, sass/base/_base.scss */
+.banner-store {
+  background-image: linear-gradient(100deg, #000000, #00000020), url("../img/Captura6.JPG");
+  height: 60rem;
+  background-size: cover;
+  background-position: center; }
+
+/* ********************************** */
+/*               BANNER CONTACTO      */
+/* ********************************** */
+/* line 225, sass/base/_base.scss */
+.banner-contacto {
+  background-image: linear-gradient(100deg, #000000, #00000020), url("../img/contacto.JPG");
+  height: 60rem;
+  background-size: cover;
+  background-position: center; }
+
+/* line 233, sass/base/_base.scss */
+.content-banner {
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 25rem 0; }
+
+/* line 239, sass/base/_base.scss */
+.content-banner p {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: 500; }
+
+/* line 246, sass/base/_base.scss */
+.content-banner h2 {
+  color: #fff;
+  font-size: 3.5rem;
+  font-weight: 500;
+  line-height: 1.2; }
+
+/* line 253, sass/base/_base.scss */
+.content-banner a {
+  margin-top: 2rem;
+  text-decoration: none;
+  color: #fff;
+  background-color: var(--primary-color);
+  display: inline-block;
+  padding: 1rem 3rem;
+  text-transform: uppercase;
+  border-radius: 3rem; }
+
+/* ********************************** */
+/*            MAIN CONTENT            */
+/* ********************************** */
+/* line 267, sass/base/_base.scss */
+.main-content {
+  background-color: #e2e2e2; }
+
+/* ********************************** */
+/*              FEATURES              */
+/* ********************************** */
+/* line 274, sass/base/_base.scss */
+.container-features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+  padding: 3rem 0; }
+
+/* line 281, sass/base/_base.scss */
+.card-feature {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 1.5rem 0; }
+
+/* line 292, sass/base/_base.scss */
+.card-feature i {
+  font-size: 2.7rem;
+  color: var(--primary-color); }
+
+/* line 297, sass/base/_base.scss */
+.feature-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; }
+
+/* line 303, sass/base/_base.scss */
+.feature-content span {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--dark-color); }
+
+/* line 309, sass/base/_base.scss */
+.feature-content p {
+  color: #777;
+  font-weight: 500; }
+
+/*abstracts*/
+/*com*/
+/* line 4, sass/layout/_com.scss */
+html {
+  font-size: 62.5%;
+  font-family: 'Poppins', sans-serif; }
+
+/* ********************************** */
+/*             CATEGORIES             */
+/* ********************************** */
+/* line 18, sass/layout/_com.scss */
+.top-categories {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 3rem; }
+
+/* line 25, sass/layout/_com.scss */
+.container-categories {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem; }
+
+/* line 31, sass/layout/_com.scss */
+.card-category {
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2rem;
+  gap: 2rem; }
+
+/* line 41, sass/layout/_com.scss */
+.category-campera {
+  background-image: linear-gradient(#00000080, #00000080), url("../img/campera.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat; }
+
+/* line 49, sass/layout/_com.scss */
+.category-remerones {
+  background-image: linear-gradient(#00000080, #00000080), url("../img/remerones.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+/* line 57, sass/layout/_com.scss */
+.category-pantalones {
+  background-image: linear-gradient(#00000080, #00000080), url("../img/pantalon.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+/* line 65, sass/layout/_com.scss */
+.card-category p {
+  font-size: 2.5rem;
+  color: #fff;
+  text-transform: capitalize;
+  position: relative; }
+
+/* line 72, sass/layout/_com.scss */
+.card-category p::after {
+  content: '';
+  width: 2.5rem;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  bottom: -1rem;
+  left: 50%;
+  transform: translate(-50%, 50%); }
+
+/* line 83, sass/layout/_com.scss */
+.card-category span {
+  font-size: 1.6rem;
+  color: #fff;
+  cursor: pointer; }
+
+/* line 89, sass/layout/_com.scss */
+.card-category span:hover {
+  color: var(--primary-color); }
+
+/* ********************************** */
+/*            TOP PRODUCTS            */
+/* ********************************** */
+/* line 96, sass/layout/_com.scss */
+.top-products {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 3rem; }
+
+/* line 103, sass/layout/_com.scss */
+.container-options {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1rem; }
+
+/* line 110, sass/layout/_com.scss */
+.container-options span {
+  color: #777;
+  background-color: #fff;
+  padding: 0.7rem 3rem;
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  border-radius: 2rem;
+  cursor: pointer; }
+
+/* line 120, sass/layout/_com.scss */
+.container-options span:hover {
+  background-color: var(--primary-color);
+  color: #fff; }
+
+/* line 125, sass/layout/_com.scss */
+.container-options span.active {
+  background-color: var(--primary-color);
+  color: #fff; }
+
+/* Products */
+/* line 131, sass/layout/_com.scss */
+.container-products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 3rem; }
+
+/* line 137, sass/layout/_com.scss */
+.card-product {
+  background-color: #fff;
+  padding: 2rem 3rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.1); }
+
+/* line 145, sass/layout/_com.scss */
+.container-img {
+  position: relative; }
+
+/* line 149, sass/layout/_com.scss */
+.container-img img {
+  width: 100%; }
+
+/* line 153, sass/layout/_com.scss */
+.container-img .discount {
+  position: absolute;
+  left: 0;
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 2px 1.2rem;
+  border-radius: 1rem;
+  font-size: 1.2rem; }
+
+/* line 163, sass/layout/_com.scss */
+.card-product:hover .discount {
+  background-color: #000; }
+
+/* line 167, sass/layout/_com.scss */
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: absolute;
+  top: 0;
+  right: -3rem;
+  z-index: -1;
+  transition: all 0.4s ease; }
+
+/* line 179, sass/layout/_com.scss */
+.button-group span {
+  border: 1px solid var(--primary-color);
+  padding: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.4s ease; }
+
+/* line 191, sass/layout/_com.scss */
+.button-group span:hover {
+  background-color: var(--primary-color); }
+
+/* line 195, sass/layout/_com.scss */
+.button-group span i {
+  font-size: 1.5rem;
+  color: var(--primary-color); }
+
+/* line 200, sass/layout/_com.scss */
+.button-group span:hover i {
+  color: #fff; }
+
+/* line 204, sass/layout/_com.scss */
+.card-product:hover .button-group {
+  z-index: 0;
+  right: -1rem; }
+
+/* line 209, sass/layout/_com.scss */
+.content-card-product {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, min-content);
+  row-gap: 1rem; }
+
+/* line 217, sass/layout/_com.scss */
+.stars {
+  grid-row: 1/2;
+  grid-column: 1/-1; }
+
+/* line 222, sass/layout/_com.scss */
+.stars i {
+  font-size: 1.3rem;
+  color: var(--primary-color); }
+
+/* line 227, sass/layout/_com.scss */
+.content-card-product h3 {
+  grid-row: 2/3;
+  grid-column: 1/-1;
+  font-weight: 400;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  cursor: pointer; }
+
+/* line 237, sass/layout/_com.scss */
+.content-card-product h3:hover {
+  color: var(--primary-color); }
+
+/* line 241, sass/layout/_com.scss */
+.add-cart {
+  justify-self: start;
+  border: 2px solid var(--primary-color);
+  padding: 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+/* line 254, sass/layout/_com.scss */
+.add-cart:hover {
+  background-color: var(--primary-color); }
+
+/* line 258, sass/layout/_com.scss */
+.add-cart i {
+  font-size: 1.5rem;
+  color: var(--primary-color); }
+
+/* line 263, sass/layout/_com.scss */
+.add-cart:hover i {
+  color: #fff; }
+
+/* line 267, sass/layout/_com.scss */
+.content-card-product .price {
+  justify-self: end;
+  align-self: center;
+  font-size: 1.7rem;
+  font-weight: 600; }
+
+/* line 275, sass/layout/_com.scss */
+.content-card-product .price span {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-decoration: line-through;
+  color: #777;
+  margin-left: 0.5rem; }
+
+/* ********************************** */
+/*               GALLERY              */
+/* ********************************** */
+/* line 286, sass/layout/_com.scss */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 30rem);
+  gap: 1.5rem;
+  margin-bottom: 3rem; }
+
+/* line 294, sass/layout/_com.scss */
+.gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+/* line 300, sass/layout/_com.scss */
+.gallery-img-3 {
+  grid-column: 2/4;
+  grid-row: 1/3; }
+
+/* ********************************** */
+/*              SPECIALS              */
+/* ********************************** */
+/* line 308, sass/layout/_com.scss */
+.specials {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 3rem; }
+
+/* ********************************** */
+/*                BLOGS               */
+/* ********************************** */
+/* line 318, sass/layout/_com.scss */
+.blogs {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; }
+
+/* line 324, sass/layout/_com.scss */
+.container-blogs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem; }
+
+/* line 330, sass/layout/_com.scss */
+.card-blog {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; }
+
+/* line 336, sass/layout/_com.scss */
+.card-blog .container-img {
+  border-radius: 2rem;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden; }
+
+/* line 343, sass/layout/_com.scss */
+.button-group-blog {
+  position: absolute;
+  bottom: 1.5rem;
+  right: -2.5rem;
+  display: flex;
+  gap: 0.7rem;
+  z-index: -1;
+  transition: all 0.3s ease; }
+
+/* line 354, sass/layout/_com.scss */
+.card-blog:hover .button-group-blog {
+  z-index: 0;
+  right: 1.5rem; }
+
+/* line 359, sass/layout/_com.scss */
+.button-group-blog span {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 50%;
+  transition: all 0.4s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+/* line 370, sass/layout/_com.scss */
+.button-group-blog span i {
+  font-size: 1.3rem; }
+
+/* line 374, sass/layout/_com.scss */
+.button-group-blog span:hover {
+  background-color: var(--primary-color); }
+
+/* line 378, sass/layout/_com.scss */
+.button-group-blog span:hover i {
+  color: #fff; }
+
+/* line 382, sass/layout/_com.scss */
+.content-blog h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1.7rem;
+  color: var(--dark-color);
+  font-weight: 500; }
+
+/* line 389, sass/layout/_com.scss */
+.content-blog h3:hover {
+  color: var(--primary-color);
+  cursor: pointer; }
+
+/* line 394, sass/layout/_com.scss */
+.content-blog p {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  color: #777; }
+
+/* line 400, sass/layout/_com.scss */
+.content-blog span {
+  color: var(--primary-color);
+  font-size: 1.3rem; }
+
+/* line 405, sass/layout/_com.scss */
+.btn-read-more {
+  padding: 1rem 3rem;
+  background-color: var(--primary-color);
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  border-radius: 2rem;
+  margin: 3rem 0 5rem;
+  display: inline-block;
+  cursor: pointer; }
+
+/* line 417, sass/layout/_com.scss */
+.btn-read-more:hover {
+  background-color: var(--dark-color); }
+
+/* ********************************** */
+/*               FOOTER               */
+/* ********************************** */
+/* line 425, sass/layout/_com.scss */
+.footer {
+  background-color: var(--primary-color); }
+
+/* line 429, sass/layout/_com.scss */
+.container-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 3rem; }
+
+/* line 436, sass/layout/_com.scss */
+.menu-footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr) 30rem;
+  gap: 3rem;
+  justify-items: center; }
+
+/* line 443, sass/layout/_com.scss */
+.title-footer {
+  font-weight: 600;
+  font-size: 1.6rem;
+  text-transform: uppercase; }
+
+/* line 449, sass/layout/_com.scss */
+.contact-info,
+.information,
+.my-account,
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; }
+
+/* line 458, sass/layout/_com.scss */
+.contact-info ul,
+.information ul,
+.my-account ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; }
+
+/* line 466, sass/layout/_com.scss */
+.contact-info ul li,
+.information ul li,
+.my-account ul li {
+  list-style: none;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 300; }
+
+/* line 475, sass/layout/_com.scss */
+.information ul li a,
+.my-account ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 300; }
+
+/* line 482, sass/layout/_com.scss */
+.information ul li a:hover,
+.my-account ul li a:hover {
+  color: var(--dark-color); }
+
+/* line 487, sass/layout/_com.scss */
+.social-icons {
+  display: flex;
+  gap: 1.5rem; }
+
+/* line 492, sass/layout/_com.scss */
+.social-icons span {
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+/* line 502, sass/layout/_com.scss */
+.social-icons span i {
+  color: #fff;
+  font-size: 1.2rem; }
+
+/* line 507, sass/layout/_com.scss */
+.facebook {
+  background-color: #3b5998; }
+
+/* line 511, sass/layout/_com.scss */
+.tiktok {
+  background-color: #000000; }
+
+/* line 515, sass/layout/_com.scss */
+.youtube {
+  background-color: #c4302b; }
+
+/* line 519, sass/layout/_com.scss */
+.pinterest {
+  background-color: #c8232c; }
+
+/* line 523, sass/layout/_com.scss */
+.instagram {
+  background: linear-gradient(#405de6, #833ab4, #c13584, #e1306c, #fd1d1d, #f56040, #fcaf45); }
+
+/* line 535, sass/layout/_com.scss */
+.content p {
+  font-size: 1.4rem;
+  color: #fff;
+  font-weight: 300; }
+
+/* line 541, sass/layout/_com.scss */
+.content input {
+  outline: none;
+  background: none;
+  border: none;
+  border-bottom: 2px solid #d2b495;
+  cursor: pointer;
+  padding: 0.5rem 0 1.2rem;
+  color: var(--dark-color);
+  display: block;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+  width: 100%;
+  font-family: inherit; }
+
+/* line 556, sass/layout/_com.scss */
+.content input::-webkit-input-placeholder {
+  color: #eee; }
+
+/* line 560, sass/layout/_com.scss */
+.content button {
+  border: none;
+  background-color: #000;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+  font-size: 1.4rem;
+  font-family: inherit;
+  cursor: pointer;
+  font-weight: 600; }
+
+/* line 573, sass/layout/_com.scss */
+.content button:hover {
+  background-color: var(--background-color);
+  color: var(--primary-color); }
+
+/* line 578, sass/layout/_com.scss */
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2rem;
+  border-top: 1px solid #d2b495; }
+
+/* line 586, sass/layout/_com.scss */
+.copyright p {
+  font-weight: 400;
+  font-size: 1.6rem; }
+
+/* ********************************** */
+/*       MEDIA QUERIES -- 768px       */
+/* ********************************** */
+@media (max-width: 768px) {
+  /* line 595, sass/layout/_com.scss */
+  html {
+    font-size: 55%; }
+  /* line 599, sass/layout/_com.scss */
+  .hero {
+    padding: 2rem; }
+  /* line 603, sass/layout/_com.scss */
+  .customer-support {
+    display: none; }
+  /* line 607, sass/layout/_com.scss */
+  .content-shopping-cart {
+    display: none; }
+  /* line 611, sass/layout/_com.scss */
+  .navbar {
+    padding: 1rem 2rem; }
+  /* line 615, sass/layout/_com.scss */
+  .navbar .fa-bars {
+    display: block;
+    color: #000000;
+    font-size: 3rem; }
+  /* line 621, sass/layout/_com.scss */
+  .menu {
+    display: none; }
+  /* line 625, sass/layout/_com.scss */
+  .content-banner {
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 25rem 0; }
+  /* line 631, sass/layout/_com.scss */
+  .container-features {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 3rem 2rem; }
+  /* line 636, sass/layout/_com.scss */
+  .card-feature {
+    padding: 2rem; }
+  /* line 640, sass/layout/_com.scss */
+  .heading-1 {
+    font-size: 2.4rem; }
+  /* line 644, sass/layout/_com.scss */
+  .card-category {
+    height: 12rem; }
+  /* line 648, sass/layout/_com.scss */
+  .card-category p {
+    font-size: 2rem;
+    text-align: center;
+    line-height: 1; }
+  /* line 654, sass/layout/_com.scss */
+  .card-category span {
+    font-size: 1.4rem; }
+  /* line 658, sass/layout/_com.scss */
+  .container-options {
+    align-items: center; }
+  /* line 662, sass/layout/_com.scss */
+  .container-options span {
+    text-align: center;
+    padding: 1rem 2rem; }
+  /* line 667, sass/layout/_com.scss */
+  .container-products {
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr)); }
+  /* line 671, sass/layout/_com.scss */
+  .gallery {
+    grid-template-rows: repeat(2, 15rem); }
+  /* line 675, sass/layout/_com.scss */
+  .container-blogs {
+    overflow: hidden;
+    grid-template-columns: 1fr 1fr;
+    height: 52rem; }
+  /* line 682, sass/layout/_com.scss */
+  .menu-footer {
+    grid-template-columns: repeat(2, 1fr); }
+  /* line 686, sass/layout/_com.scss */
+  .copyright {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem; } }
+
+/* line 694, sass/layout/_com.scss */
+.menu {
+  display: none; }
+
+/* line 698, sass/layout/_com.scss */
+.menu.active {
+  display: block; }
+
+/* ********************************** */
+/*       MEDIA QUERIES -- 468px       */
+/* ********************************** */
+@media (max-width: 468px) {
+  /* line 706, sass/layout/_com.scss */
+  html {
+    font-size: 42.5%; }
+  /* line 710, sass/layout/_com.scss */
+  .content-banner {
+    max-width: 50rem;
+    padding: 22rem 0; }
+  /* line 715, sass/layout/_com.scss */
+  .heading-1 {
+    font-size: 2.8rem; }
+  /* line 719, sass/layout/_com.scss */
+  .card-feature {
+    flex-direction: column;
+    border-radius: 2rem; }
+  /* line 724, sass/layout/_com.scss */
+  .feature-content {
+    align-items: center; }
+  /* line 728, sass/layout/_com.scss */
+  .feature-content p {
+    font-size: 1.4rem;
+    text-align: center; }
+  /* line 733, sass/layout/_com.scss */
+  .feature-content span {
+    font-size: 1.6rem;
+    text-align: center; }
+  /* line 738, sass/layout/_com.scss */
+  .container-options span {
+    font-size: 1.8rem;
+    padding: 1rem 1.5rem;
+    font-weight: 500; }
+  /* line 744, sass/layout/_com.scss */
+  .container-products {
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1rem; }
+  /* line 749, sass/layout/_com.scss */
+  .container-img .discount {
+    font-size: 2rem; }
+  /* line 753, sass/layout/_com.scss */
+  .content-card-product h3 {
+    font-size: 2.2rem; }
+  /* line 757, sass/layout/_com.scss */
+  .gallery {
+    grid-template-rows: repeat(2, 20rem); }
+  /* line 761, sass/layout/_com.scss */
+  .blogs {
+    padding: 2rem; }
+  /* line 765, sass/layout/_com.scss */
+  .container-blogs {
+    grid-template-columns: 1fr;
+    height: 75rem; }
+  /* line 770, sass/layout/_com.scss */
+  .content-blog h3 {
+    font-size: 2.4rem; }
+  /* line 774, sass/layout/_com.scss */
+  .content-blog span {
+    font-size: 1.8rem; }
+  /* line 778, sass/layout/_com.scss */
+  .content-blog p {
+    font-size: 2.2rem; }
+  /* line 782, sass/layout/_com.scss */
+  .btn-read-more {
+    font-size: 1.8rem; }
+  /* line 786, sass/layout/_com.scss */
+  .contact-info ul,
+  .information ul,
+  .my-account ul {
+    display: none; }
+  /* line 792, sass/layout/_com.scss */
+  .contact-info {
+    align-items: center; }
+  /* line 796, sass/layout/_com.scss */
+  .menu-footer {
+    grid-template-columns: 1fr; }
+  /* line 800, sass/layout/_com.scss */
+  .content p {
+    font-size: 1.6rem; } }
+
+@media (max-width: 768px) {
+  /* line 807, sass/layout/_com.scss */
+  .menu {
+    display: none; }
+  /* line 810, sass/layout/_com.scss */
+  .menu.active {
+    display: block; } }
+
+@media (min-width: 769px) {
+  /* line 816, sass/layout/_com.scss */
+  .menu {
+    display: flex; }
+  /* line 819, sass/layout/_com.scss */
+  .menu.active {
+    display: flex; } }
+
+/* line 824, sass/layout/_com.scss */
+a {
+  text-decoration: none;
+  /* Elimina el subrayado */ }
+
+/*components*/
+/* line 4, sass/components/_other.scss */
+html {
+  font-size: 62.5%;
+  font-family: 'Poppins', sans-serif; }
+
+/* ********************************** */
+/*             CATEGORIES             */
+/* ********************************** */
+/* line 11, sass/components/_other.scss */
+.top-categories {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 3rem; }
+
+/* line 18, sass/components/_other.scss */
+.container-categories {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem; }
+
+/* line 24, sass/components/_other.scss */
+.card-category {
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2rem;
+  gap: 2rem; }
+
+/* line 34, sass/components/_other.scss */
+.category-campera {
+  background-image: linear-gradient(#00000080, #00000080), url("../img/campera.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat; }
+
+/* line 42, sass/components/_other.scss */
+.category-remerones {
+  background-image: linear-gradient(#00000080, #00000080), url("../img/remerones.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+/* line 50, sass/components/_other.scss */
+.category-pantalones {
+  background-image: linear-gradient(#00000080, #00000080), url("../img/pantalon.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+/* line 58, sass/components/_other.scss */
+.card-category p {
+  font-size: 2.5rem;
+  color: #fff;
+  text-transform: capitalize;
+  position: relative; }
+
+/* line 65, sass/components/_other.scss */
+.card-category p::after {
+  content: '';
+  width: 2.5rem;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  bottom: -1rem;
+  left: 50%;
+  transform: translate(-50%, 50%); }
+
+/* line 76, sass/components/_other.scss */
+.card-category span {
+  font-size: 1.6rem;
+  color: #fff;
+  cursor: pointer; }
+
+/* line 82, sass/components/_other.scss */
+.card-category span:hover {
+  color: var(--primary-color); }
+
+/* ********************************** */
+/*            TOP PRODUCTS            */
+/* ********************************** */
+/* line 89, sass/components/_other.scss */
+.top-products {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 3rem; }
+
+/* line 96, sass/components/_other.scss */
+.container-options {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1rem; }
+
+/* line 103, sass/components/_other.scss */
+.container-options span {
+  color: #777;
+  background-color: #fff;
+  padding: 0.7rem 3rem;
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  border-radius: 2rem;
+  cursor: pointer; }
+
+/* line 113, sass/components/_other.scss */
+.container-options span:hover {
+  background-color: var(--primary-color);
+  color: #fff; }
+
+/* line 118, sass/components/_other.scss */
+.container-options span.active {
+  background-color: var(--primary-color);
+  color: #fff; }
+
+/* Products */
+/* line 124, sass/components/_other.scss */
+.container-products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 3rem; }
+
+/* line 130, sass/components/_other.scss */
+.card-product {
+  background-color: #fff;
+  padding: 2rem 3rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.1); }
+
+/* line 138, sass/components/_other.scss */
+.container-img {
+  position: relative; }
+
+/* line 142, sass/components/_other.scss */
+.container-img img {
+  width: 100%; }
+
+/* line 146, sass/components/_other.scss */
+.container-img .discount {
+  position: absolute;
+  left: 0;
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 2px 1.2rem;
+  border-radius: 1rem;
+  font-size: 1.2rem; }
+
+/* line 156, sass/components/_other.scss */
+.card-product:hover .discount {
+  background-color: #000; }
+
+/* line 160, sass/components/_other.scss */
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: absolute;
+  top: 0;
+  right: -3rem;
+  z-index: -1;
+  transition: all 0.4s ease; }
+
+/* line 172, sass/components/_other.scss */
+.button-group span {
+  border: 1px solid var(--primary-color);
+  padding: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.4s ease; }
+
+/* line 184, sass/components/_other.scss */
+.button-group span:hover {
+  background-color: var(--primary-color); }
+
+/* line 188, sass/components/_other.scss */
+.button-group span i {
+  font-size: 1.5rem;
+  color: var(--primary-color); }
+
+/* line 193, sass/components/_other.scss */
+.button-group span:hover i {
+  color: #fff; }
+
+/* line 197, sass/components/_other.scss */
+.card-product:hover .button-group {
+  z-index: 0;
+  right: -1rem; }
+
+/* line 202, sass/components/_other.scss */
+.content-card-product {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, min-content);
+  row-gap: 1rem; }
+
+/* line 210, sass/components/_other.scss */
+.stars {
+  grid-row: 1/2;
+  grid-column: 1/-1; }
+
+/* line 215, sass/components/_other.scss */
+.stars i {
+  font-size: 1.3rem;
+  color: var(--primary-color); }
+
+/* line 220, sass/components/_other.scss */
+.content-card-product h3 {
+  grid-row: 2/3;
+  grid-column: 1/-1;
+  font-weight: 400;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  cursor: pointer; }
+
+/* line 230, sass/components/_other.scss */
+.content-card-product h3:hover {
+  color: var(--primary-color); }
+
+/* line 234, sass/components/_other.scss */
+.add-cart {
+  justify-self: start;
+  border: 2px solid var(--primary-color);
+  padding: 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+/* line 247, sass/components/_other.scss */
+.add-cart:hover {
+  background-color: var(--primary-color); }
+
+/* line 251, sass/components/_other.scss */
+.add-cart i {
+  font-size: 1.5rem;
+  color: var(--primary-color); }
+
+/* line 256, sass/components/_other.scss */
+.add-cart:hover i {
+  color: #fff; }
+
+/* line 260, sass/components/_other.scss */
+.content-card-product .price {
+  justify-self: end;
+  align-self: center;
+  font-size: 1.7rem;
+  font-weight: 600; }
+
+/* line 268, sass/components/_other.scss */
+.content-card-product .price span {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-decoration: line-through;
+  color: #777;
+  margin-left: 0.5rem; }
+
+/* ********************************** */
+/*               GALLERY              */
+/* ********************************** */
+/* line 279, sass/components/_other.scss */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 30rem);
+  gap: 1.5rem;
+  margin-bottom: 3rem; }
+
+/* line 287, sass/components/_other.scss */
+.gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+/* line 293, sass/components/_other.scss */
+.gallery-img-3 {
+  grid-column: 2/4;
+  grid-row: 1/3; }
+
+/* ********************************** */
+/*              SPECIALS              */
+/* ********************************** */
+/* line 301, sass/components/_other.scss */
+.specials {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 3rem; }
+
+/* ********************************** */
+/*                BLOGS               */
+/* ********************************** */
+/* line 311, sass/components/_other.scss */
+.blogs {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; }
+
+/* line 317, sass/components/_other.scss */
+.container-blogs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem; }
+
+/* line 323, sass/components/_other.scss */
+.card-blog {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; }
+
+/* line 329, sass/components/_other.scss */
+.card-blog .container-img {
+  border-radius: 2rem;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden; }
+
+/* line 336, sass/components/_other.scss */
+.button-group-blog {
+  position: absolute;
+  bottom: 1.5rem;
+  right: -2.5rem;
+  display: flex;
+  gap: 0.7rem;
+  z-index: -1;
+  transition: all 0.3s ease; }
+
+/* line 347, sass/components/_other.scss */
+.card-blog:hover .button-group-blog {
+  z-index: 0;
+  right: 1.5rem; }
+
+/* line 352, sass/components/_other.scss */
+.button-group-blog span {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 50%;
+  transition: all 0.4s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+/* line 363, sass/components/_other.scss */
+.button-group-blog span i {
+  font-size: 1.3rem; }
+
+/* line 367, sass/components/_other.scss */
+.button-group-blog span:hover {
+  background-color: var(--primary-color); }
+
+/* line 371, sass/components/_other.scss */
+.button-group-blog span:hover i {
+  color: #fff; }
+
+/* line 375, sass/components/_other.scss */
+.content-blog h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1.7rem;
+  color: var(--dark-color);
+  font-weight: 500; }
+
+/* line 382, sass/components/_other.scss */
+.content-blog h3:hover {
+  color: var(--primary-color);
+  cursor: pointer; }
+
+/* line 387, sass/components/_other.scss */
+.content-blog p {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  color: #777; }
+
+/* line 393, sass/components/_other.scss */
+.content-blog span {
+  color: var(--primary-color);
+  font-size: 1.3rem; }
+
+/* line 398, sass/components/_other.scss */
+.btn-read-more {
+  padding: 1rem 3rem;
+  background-color: var(--primary-color);
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  border-radius: 2rem;
+  margin: 3rem 0 5rem;
+  display: inline-block;
+  cursor: pointer; }
+
+/* line 410, sass/components/_other.scss */
+.btn-read-more:hover {
+  background-color: var(--dark-color); }
+
+/* ********************************** */
+/*               FOOTER               */
+/* ********************************** */
+/* line 418, sass/components/_other.scss */
+.footer {
+  background-color: var(--primary-color); }
+
+/* line 422, sass/components/_other.scss */
+.container-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 3rem; }
+
+/* line 429, sass/components/_other.scss */
+.menu-footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr) 30rem;
+  gap: 3rem;
+  justify-items: center; }
+
+/* line 436, sass/components/_other.scss */
+.title-footer {
+  font-weight: 600;
+  font-size: 1.6rem;
+  text-transform: uppercase; }
+
+/* line 442, sass/components/_other.scss */
+.contact-info,
+.information,
+.my-account,
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; }
+
+/* line 451, sass/components/_other.scss */
+.contact-info ul,
+.information ul,
+.my-account ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; }
+
+/* line 459, sass/components/_other.scss */
+.contact-info ul li,
+.information ul li,
+.my-account ul li {
+  list-style: none;
+  color: #000000;
+  font-size: 1.4rem;
+  font-weight: 300; }
+
+/* line 468, sass/components/_other.scss */
+.information ul li a,
+.my-account ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 300; }
+
+/* line 475, sass/components/_other.scss */
+.information ul li a:hover,
+.my-account ul li a:hover {
+  color: var(--dark-color); }
+
+/* line 480, sass/components/_other.scss */
+.social-icons {
+  display: flex;
+  gap: 1.5rem; }
+
+/* line 485, sass/components/_other.scss */
+.social-icons span {
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+/* line 495, sass/components/_other.scss */
+.social-icons span i {
+  color: #fff;
+  font-size: 1.2rem; }
+
+/* line 500, sass/components/_other.scss */
+.facebook {
+  background-color: #3b5998; }
+
+/* line 504, sass/components/_other.scss */
+.tiktok {
+  background-color: #000000; }
+
+/* line 508, sass/components/_other.scss */
+.youtube {
+  background-color: #c4302b; }
+
+/* line 512, sass/components/_other.scss */
+.pinterest {
+  background-color: #c8232c; }
+
+/* line 516, sass/components/_other.scss */
+.instagram {
+  background: linear-gradient(#405de6, #833ab4, #c13584, #e1306c, #fd1d1d, #f56040, #fcaf45); }
+
+/* line 528, sass/components/_other.scss */
+.content p {
+  font-size: 1.4rem;
+  color: #000000;
+  font-weight: 300; }
+
+/* line 534, sass/components/_other.scss */
+.content input {
+  outline: none;
+  background: none;
+  border: none;
+  border-bottom: 2px solid #d2b495;
+  cursor: pointer;
+  padding: 0.5rem 0 1.2rem;
+  color: var(--dark-color);
+  display: block;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+  width: 100%;
+  font-family: inherit; }
+
+/* line 549, sass/components/_other.scss */
+.content input::-webkit-input-placeholder {
+  color: #eee; }
+
+/* line 553, sass/components/_other.scss */
+.content button {
+  border: none;
+  background-color: #000;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+  font-size: 1.4rem;
+  font-family: inherit;
+  cursor: pointer;
+  font-weight: 600; }
+
+/* line 566, sass/components/_other.scss */
+.content button:hover {
+  background-color: var(--background-color);
+  color: var(--primary-color); }
+
+/* line 571, sass/components/_other.scss */
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2rem;
+  border-top: 1px solid #d2b495; }
+
+/* line 579, sass/components/_other.scss */
+.copyright p {
+  font-weight: 400;
+  font-size: 1.6rem; }
+
+/* ********************************** */
+/*       MEDIA QUERIES -- 768px       */
+/* ********************************** */
+@media (max-width: 768px) {
+  /* line 588, sass/components/_other.scss */
+  html {
+    font-size: 55%; }
+  /* line 592, sass/components/_other.scss */
+  .hero {
+    padding: 2rem; }
+  /* line 596, sass/components/_other.scss */
+  .customer-support {
+    display: none; }
+  /* line 600, sass/components/_other.scss */
+  .content-shopping-cart {
+    display: none; }
+  /* line 604, sass/components/_other.scss */
+  .navbar {
+    padding: 1rem 2rem; }
+  /* line 608, sass/components/_other.scss */
+  .navbar .fa-bars {
+    display: block;
+    color: #000000;
+    font-size: 3rem; }
+  /* line 614, sass/components/_other.scss */
+  .menu {
+    display: none; }
+  /* line 618, sass/components/_other.scss */
+  .content-banner {
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 25rem 0; }
+  /* line 624, sass/components/_other.scss */
+  .container-features {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 3rem 2rem; }
+  /* line 629, sass/components/_other.scss */
+  .card-feature {
+    padding: 2rem; }
+  /* line 633, sass/components/_other.scss */
+  .heading-1 {
+    font-size: 2.4rem; }
+  /* line 637, sass/components/_other.scss */
+  .card-category {
+    height: 12rem; }
+  /* line 641, sass/components/_other.scss */
+  .card-category p {
+    font-size: 2rem;
+    text-align: center;
+    line-height: 1; }
+  /* line 647, sass/components/_other.scss */
+  .card-category span {
+    font-size: 1.4rem; }
+  /* line 651, sass/components/_other.scss */
+  .container-options {
+    align-items: center; }
+  /* line 655, sass/components/_other.scss */
+  .container-options span {
+    text-align: center;
+    padding: 1rem 2rem; }
+  /* line 660, sass/components/_other.scss */
+  .container-products {
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr)); }
+  /* line 664, sass/components/_other.scss */
+  .gallery {
+    grid-template-rows: repeat(2, 15rem); }
+  /* line 668, sass/components/_other.scss */
+  .container-blogs {
+    overflow: hidden;
+    grid-template-columns: 1fr 1fr;
+    height: 52rem; }
+  /* line 675, sass/components/_other.scss */
+  .menu-footer {
+    grid-template-columns: repeat(2, 1fr); }
+  /* line 679, sass/components/_other.scss */
+  .copyright {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem; } }
+
+/* line 687, sass/components/_other.scss */
+.menu {
+  display: none; }
+
+/* line 691, sass/components/_other.scss */
+.menu.active {
+  display: block; }
+
+/* ********************************** */
+/*       MEDIA QUERIES -- 468px       */
+/* ********************************** */
+@media (max-width: 468px) {
+  /* line 699, sass/components/_other.scss */
+  html {
+    font-size: 42.5%; }
+  /* line 703, sass/components/_other.scss */
+  .content-banner {
+    max-width: 50rem;
+    padding: 22rem 0; }
+  /* line 708, sass/components/_other.scss */
+  .heading-1 {
+    font-size: 2.8rem; }
+  /* line 712, sass/components/_other.scss */
+  .card-feature {
+    flex-direction: column;
+    border-radius: 2rem; }
+  /* line 717, sass/components/_other.scss */
+  .feature-content {
+    align-items: center; }
+  /* line 721, sass/components/_other.scss */
+  .feature-content p {
+    font-size: 1.4rem;
+    text-align: center; }
+  /* line 726, sass/components/_other.scss */
+  .feature-content span {
+    font-size: 1.6rem;
+    text-align: center; }
+  /* line 731, sass/components/_other.scss */
+  .container-options span {
+    font-size: 1.8rem;
+    padding: 1rem 1.5rem;
+    font-weight: 500; }
+  /* line 737, sass/components/_other.scss */
+  .container-products {
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1rem; }
+  /* line 742, sass/components/_other.scss */
+  .container-img .discount {
+    font-size: 2rem; }
+  /* line 746, sass/components/_other.scss */
+  .content-card-product h3 {
+    font-size: 2.2rem; }
+  /* line 750, sass/components/_other.scss */
+  .gallery {
+    grid-template-rows: repeat(2, 20rem); }
+  /* line 754, sass/components/_other.scss */
+  .blogs {
+    padding: 2rem; }
+  /* line 758, sass/components/_other.scss */
+  .container-blogs {
+    grid-template-columns: 1fr;
+    height: 75rem; }
+  /* line 763, sass/components/_other.scss */
+  .content-blog h3 {
+    font-size: 2.4rem; }
+  /* line 767, sass/components/_other.scss */
+  .content-blog span {
+    font-size: 1.8rem; }
+  /* line 771, sass/components/_other.scss */
+  .content-blog p {
+    font-size: 2.2rem; }
+  /* line 775, sass/components/_other.scss */
+  .btn-read-more {
+    font-size: 1.8rem; }
+  /* line 779, sass/components/_other.scss */
+  .contact-info ul,
+  .information ul,
+  .my-account ul {
+    display: none; }
+  /* line 785, sass/components/_other.scss */
+  .contact-info {
+    align-items: center; }
+  /* line 789, sass/components/_other.scss */
+  .menu-footer {
+    grid-template-columns: 1fr; }
+  /* line 793, sass/components/_other.scss */
+  .content p {
+    font-size: 1.6rem; } }
+
+@media (max-width: 768px) {
+  /* line 800, sass/components/_other.scss */
+  .menu {
+    display: none; }
+  /* line 803, sass/components/_other.scss */
+  .menu.active {
+    display: block; } }
+
+@media (min-width: 769px) {
+  /* line 809, sass/components/_other.scss */
+  .menu {
+    display: flex; }
+  /* line 812, sass/components/_other.scss */
+  .menu.active {
+    display: flex; } }
+
+/* line 817, sass/components/_other.scss */
+a {
+  text-decoration: none;
+  /* Elimina el subrayado */ }
